@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharh</title>
+
+    
+     <!-- Include Bootstrap CSS -->
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+
+    <!--bootstrap se css copy kya he-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style type="text/css">
+      
+    body {
+        margin: 0px;
+        background-color: rgb(241, 231, 231);
+        font-family: Arial, sans-serif;
+    }
+    .container1 {
+        background-color: rgb(17, 9, 126);
+    }
+    .header {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 0px;
+        padding-top: 2px;
+        text-align: center;
+    }
+    
+    /* "بِسْمِ اللہِ الرَّحْمٰنِ الرَّحِیْمِ" عنوان کے <h3> انداز کو بغیر کوئی بارڈر ہٹا دیں */
+    .header h3 {
+        border-bottom: none;
+    }
+    
+        
+  /* Navbar ka background color blue karna */
+  .navbar-light.bg-light {
+    background-color: rgb(17, 9, 126) !important;
+  }
+
+  /* Navbar ke text color white karna */
+  .navbar-light .navbar-nav .nav-link {
+    color: rgb(241, 231, 231) !important;
+  }
+
+  /* 'Ubaid Raza' text ko white karna */
+  .navbar-light .navbar-brand {
+    color: white !important;
+  }
+
+ 
+
+  /* Dropdown toggle button (menu button) ka text color white karna */
+  .navbar-light .navbar-toggler-icon {
+    background-color: white !important;
+  }
+
+ 
+
+  /* Dropdown menu ke text color white karna */
+  .navbar-light .navbar-nav .dropdown-menu .dropdown-item {
+    color: white !important;
+  }
+
+
+
+  /* Dropdown menu ka background color blue karna */
+  .navbar-light .navbar-nav .dropdown-menu {
+    background-color: rgb(142, 142, 142) !important;
+  }
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            
+            text-align: center;
+        }
+        .navbar ul li {
+            display: inline-block;
+            color: white;
+            font-size: 15px;
+            margin:  10px;
+        }
+        .center {
+            text-align: center;
+        }
+        .center img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1, h2,h3, h5, h6 {
+            border-bottom: 3px solid #000;
+            padding-bottom: 5px;
+            display: inline-block;
+            color: rgb(11, 6, 81);
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .col-lg-4 {
+            flex: 0 0 calc(33.33% - 20px);
+            margin: 10px;
+        }
+        .col-lg-4 a {
+            text-decoration: none;
+            color: rgb(11, 6, 81);
+        }
+
+
+        footer {
+    background-color:rgb(17, 9, 126);
+	color: #fff;
+    text-align: center;
+    padding: 8px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="header"> 
+            <h3 style="color:white;"> بِسْمِ اللہِ الرَّحْمٰنِ الرَّحِیْمِ</h3>
+        </div>
+    </div>
+    
+
+
+    <div class="center">
+        <div>
+            <img src="https://kanz-ul-madaris.org/img/logo.png" alt="Image" width="29%"/>
+            <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/Logo.png%20dawate%20islami.png" align="left" width="9%" height="9%">
+            <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/logo.png%20kanzul%20madaris.png" align="right" width="12%" height="12%">
+        </div>
+    </div> <br />
+
+
+
+
+    
+       <!--ye bootstrap ka he-->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i>Ubaid Raza</i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" class="active" href="index.html">Home</a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="Book.html">Book</a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="Sharah.html">Sharh</a>
+              </li>
+
+              
+              <li class="nav-item">
+                <a class="nav-link" href="Paper.html">Paper</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+
+
+
+
+
+              
+
+
+                 
+              
+
+             
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+    <br /> 
+
+    <style>
+        h1, h2,h3 , h4, h5, h6 {
+            border-bottom: 3px solid #000;
+            padding-bottom: 1px;
+            display: inline-block;
+            color:rgb(11, 6, 81);
+        }
+    </style>
+
+  
+
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .col-lg-4 {
+            flex: 0 0 calc(33.33% - 20px);
+            margin: 10px;
+        }
+        .col-lg-4 a {
+            text-decoration: none;
+            color: rgb(11, 6, 81);
+        }
+    </style>
+
+     
+
+
+
+
+
+
+<!-- ------------------------------------------------Syllabus Drja oola-------------------------------------------------->
+  
+&nbsp;&nbsp;&nbsp;<h2>Darja Oola Sharah (1st Year)</h2>
+     <div class="container text-center">
+       
+       <div class="row justify-content-center">
+         <div class="col-lg-4 col-md-4 col-sm-6">
+           <div class="position-relative mb-40 text-center">
+             <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1WeqQ4EjJf2N9ojDWYpNx_LH0tE5jjmZI/view?usp=drive_link" download>
+               <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/GoOnlineTools-image-downloader%20(1).jpg" alt="Khulasa tul nahw Solved" class="img-fluid mb-15 mx-auto d-block" style="height: 250px;">
+             </a>
+                
+             <h6 class="title-medium-dark size-lg mb-none">
+               <a target="_blank" href="https://drive.google.com/file/d/1WeqQ4EjJf2N9ojDWYpNx_LH0tE5jjmZI/view?usp=drive_link" download>Khulasa tul nahw Solved</a>
+             </h6>
+           </div>
+         </div>
+        
+
+         <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="position-relative mb-40 text-center">
+               <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1YOjm4iE66-EU6dblICo3mzwLwk4om4VC/view?usp=drive_link" download>
+                   <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/GoOnlineTools-image-downloader.png" alt="Taiseer sbwabul surf" class="img-fluid mb-15" style="height: 250px;">
+               </a>
+               <br />
+               <h6 class="title-medium-dark size-lg mb-none">
+                  <a target="_blank" href="https://drive.google.com/file/d/1YOjm4iE66-EU6dblICo3mzwLwk4om4VC/view?usp=drive_link" download>Taiseer sbwabul surf</a>
+               </h6>
+            </div>
+         </div>
+     
+
+
+        
+
+
+
+       </div>
+     </div>
+
+
+     <!-- ------------------------------------------------Books-------------------------------------------------->
+
+
+     <hr />
+     <br />
+
+
+
+     <!-- ------------------------------------------------Syllabus Drja Sania-------------------------------------------------->
+  
+    
+    &nbsp;&nbsp;&nbsp;<h2>Darja Sania Sharah (2nd Year)</h2>
+    
+    <div class="container text-center">
+       
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="position-relative mb-40 text-center">
+            <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1uHFaAj3CTu2h5gLdp83yaehLr0EDn7eD/view?usp=drive_link" download>
+              <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/hfgfmyujvee.jpg" alt="Sharah Hidayatul Nahw" class="img-fluid mb-15 mx-auto d-block" style="height: 250px;">
+            </a>
+               
+            <h6 class="title-medium-dark size-lg mb-none">
+              <a target="_blank" href="https://drive.google.com/file/d/1uHFaAj3CTu2h5gLdp83yaehLr0EDn7eD/view?usp=drive_link" download>Sharah Hidayatul Nahw</a>
+            </h6>
+          </div>
+        </div>
+       
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+           <div class="position-relative mb-40 text-center">
+              <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1PKiDp96k3b-UeaG8L0i5SmSJjWzhAMIW/view?usp=drive_link" download>
+                  <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/mffefj.fgfr.jpg" alt="Sharah Noorul Izah" class="img-fluid mb-15" style="height: 250px;">
+              </a>
+              <br />
+              <h6 class="title-medium-dark size-lg mb-none">
+                 <a target="_blank" href="https://drive.google.com/file/d/1PKiDp96k3b-UeaG8L0i5SmSJjWzhAMIW/view?usp=drive_link" download>Sharah Noorul Izah</a>
+              </h6>
+           </div>
+        </div>
+    
+
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+           <div class="position-relative mb-40 text-center">
+              <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1_6rbv3y3TgSUsR89lYhuHAi_RK_mplmo/view?usp=drive_link" download>
+                  <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/jteqwrgfbyjgf.jpg" alt="Sharah Miatu Amil" class="img-fluid mb-15" style="height: 250px;">
+              </a>
+              <br />
+              <h6 class="title-medium-dark size-lg mb-none">
+                 <a target="_blank" href="https://drive.google.com/file/d/1_6rbv3y3TgSUsR89lYhuHAi_RK_mplmo/view?usp=drive_link" download>Sharah Miatu Amil</a>
+              </h6>
+           </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+           <div class="position-relative mb-40 text-center">
+              <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/14DxVHh_dyiMQZG-AhUUS0Y0NC_jzEJU1/view?usp=drive_link" download>
+                  <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/bnfnhmmdrg.jpg" alt="Sharah Inshaul Arabia" class="img-fluid mb-15" style="height: 250px;">
+              </a>
+              <br />
+              <h6 class="title-medium-dark size-lg mb-none">
+                 <a target="_blank" href="https://drive.google.com/file/d/14DxVHh_dyiMQZG-AhUUS0Y0NC_jzEJU1/view?usp=drive_link" download>Sharah Inshaul Arabia</a>
+              </h6>
+           </div>
+        </div>
+    
+
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+           <div class="position-relative mb-40 text-center">
+              <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/drive/folders/1O05mM5DJn7O4hmRgRGdHEEIzKT8sDEcj" download>
+                  <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/b%3Bohgpgnv.png" alt="Notes Sharah Miatu Amil " class="img-fluid mb-15" style="height: 250px;">
+              </a>
+              <br />
+              <h6 class="title-medium-dark size-lg mb-none">
+                 <a target="_blank" href="https://drive.google.com/drive/folders/1O05mM5DJn7O4hmRgRGdHEEIzKT8sDEcj" download>Notes Sharah Miatu Amil</a>
+              </h6>
+           </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+    <!-- ------------------------------------------------Books-------------------------------------------------->
+
+
+
+
+
+    <hr />
+    <br />
+
+
+    <!-- ------------------------------------------------Syllabus Drja Salisa-------------------------------------------------->
+  
+    
+    &nbsp;&nbsp;&nbsp;<h2>Darja Salisa Sharah (3rd Year)</h2>
+   
+    <div class="container text-center">
+       
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="position-relative mb-40 text-center">
+            <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1kGHfJLtLZmzqu8obj9Y3ok19kaPeCqsF/view?usp=drive_link" download>
+              <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/bvjdblanwpc.jpg" alt="Sharah Usoolul Shashi" class="img-fluid mb-15 mx-auto d-block" style="height: 250px;">
+            </a>
+               
+            <h6 class="title-medium-dark size-lg mb-none">
+              <a target="_blank" href="https://drive.google.com/file/d/1kGHfJLtLZmzqu8obj9Y3ok19kaPeCqsF/view?usp=drive_link" download>Sharah Usoolul Shashi</a>
+            </h6>
+          </div>
+        </div>
+       
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+           <div class="position-relative mb-40 text-center">
+              <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1pZCxfTE1F8FTGs4lxlgy9WunKuD42P1X/view?usp=drive_link" download>
+                  <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/bckb%3Bobwnl.jpg" alt="Sharah Tafseer" class="img-fluid mb-15" style="height: 250px;">
+              </a>
+              <br />
+              <h6 class="title-medium-dark size-lg mb-none">
+                 <a target="_blank" href="https://drive.google.com/file/d/1pZCxfTE1F8FTGs4lxlgy9WunKuD42P1X/view?usp=drive_link" download>Sharah Tafseer</a>
+              </h6>
+           </div>
+        </div>
+    
+
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+           <div class="position-relative mb-40 text-center">
+              <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1HXIvpyMQ92RAvA3XC5LU0833Q2aRBFI-/view?usp=drive_link" download>
+                  <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/jc%3Bbobcon%20%2C.x.jpg" alt="Sharah Mirqat" class="img-fluid mb-15" style="height: 250px;">
+              </a>
+              <br />
+              <h6 class="title-medium-dark size-lg mb-none">
+                 <a target="_blank" href="https://drive.google.com/file/d/1HXIvpyMQ92RAvA3XC5LU0833Q2aRBFI-/view?usp=drive_link" download>Sharah Mirqat</a>
+              </h6>
+           </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+           <div class="position-relative mb-40 text-center">
+              <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1CRLuK0R-Swt7nrc75uTpKNDleK8Q1ss4/view?usp=drive_link" download>
+                  <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/bckbcouwax.jpg" alt="Sharah Duroosul Balagha" class="img-fluid mb-15" style="height: 250px;">
+              </a>
+              <br />
+              <h6 class="title-medium-dark size-lg mb-none">
+                 <a target="_blank" href="https://drive.google.com/file/d/1CRLuK0R-Swt7nrc75uTpKNDleK8Q1ss4/view?usp=drive_link" download>Sharah Duroosul Balagha</a>
+              </h6>
+           </div>
+        </div>
+    
+
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+           <div class="position-relative mb-40 text-center">
+              <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1K78ffh3veB6l1xuiuvsD7zt8kLw0sXm0/view?usp=drive_link" download>
+                  <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/bvkbochwnkc.jpg" alt="Notes Usoolul Shashi" class="img-fluid mb-15" style="height: 250px;">
+              </a>
+              <br />
+              <h6 class="title-medium-dark size-lg mb-none">
+                 <a target="_blank" href="https://drive.google.com/file/d/1K78ffh3veB6l1xuiuvsD7zt8kLw0sXm0/view?usp=drive_link" download>Notes Usoolul Shashi</a>
+              </h6>
+           </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+    <!-- ------------------------------------------------Books-------------------------------------------------->
+
+
+
+
+    
+    <hr />
+    <br />
+
+
+
+    <!-- ------------------------------------------------Syllabus Drja Salisa-------------------------------------------------->
+  
+    
+    &nbsp;&nbsp;&nbsp;<h2>Darja Rabia Sharah (4th Year)</h2>
+    
+    <div class="container text-center">
+       
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="position-relative mb-40 text-center">
+            <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1BRyWIwbow6FXmGhA7IjaWoy-s2waBjpb/view?usp=drive_link" download>
+              <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/czfgfggx.jpg" alt="Sharah Kafiya" class="img-fluid mb-15 mx-auto d-block" style="height: 250px;">
+            </a>
+               
+            <h6 class="title-medium-dark size-lg mb-none">
+              <a target="_blank" href="https://drive.google.com/file/d/1BRyWIwbow6FXmGhA7IjaWoy-s2waBjpb/view?usp=drive_link" download>Sharah Kafiya</a>
+            </h6>
+          </div>
+        </div>
+       
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+           <div class="position-relative mb-40 text-center">
+              <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1s8rChOlZt38tnlUx3SRSNhtGqFZMBBkK/view?usp=drive_link" download>
+                  <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/h%2Ckftsxgnm.jpg" alt="Sharah Qutbi" class="img-fluid mb-15" style="height: 250px;">
+              </a>
+              <br />
+              <h6 class="title-medium-dark size-lg mb-none">
+                 <a target="_blank" href="https://drive.google.com/file/d/1s8rChOlZt38tnlUx3SRSNhtGqFZMBBkK/view?usp=drive_link" download>Sharah Qutbi</a>
+              </h6>
+           </div>
+        </div>
+    
+
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+           <div class="position-relative mb-40 text-center">
+              <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/12rfLWMrkyVH0q2dVcqcTB0TwGeJ8K0s1/view?usp=drive_link" download>
+                  <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/fzwat5dijb.jpg" alt="Sharah Shamaile Termizi" class="img-fluid mb-15" style="height: 250px;">
+              </a>
+              <br />
+              <h6 class="title-medium-dark size-lg mb-none">
+                 <a target="_blank" href="https://drive.google.com/file/d/12rfLWMrkyVH0q2dVcqcTB0TwGeJ8K0s1/view?usp=drive_link" download>Sharah Shamaile Termizi</a>
+              </h6>
+           </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+           <div class="position-relative mb-40 text-center">
+              <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1udSsYmJ1VZ2po_onoPh5-rEL83Wynt_E/view?usp=drive_link" download>
+                  <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/vmcrhswzbnvk.jpg" alt="Sharah Qutbi" class="img-fluid mb-15" style="height: 250px;">
+              </a>
+              <br />
+              <h6 class="title-medium-dark size-lg mb-none">
+                 <a target="_blank" href="https://drive.google.com/file/d/1udSsYmJ1VZ2po_onoPh5-rEL83Wynt_E/view?usp=drive_link" download>Sharah Qutbi</a>
+              </h6>
+           </div>
+        </div>
+    
+
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+           <div class="position-relative mb-40 text-center">
+              <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1MP6aKfQ8T7yG1MPefDSARaGPj3VJvSqu/view?usp=drive_link" download>
+                  <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/cghdjgkljhfk.jpg" alt="Sharah Kanzul Daqaiq" class="img-fluid mb-15" style="height: 250px;">
+              </a>
+              <br />
+              <h6 class="title-medium-dark size-lg mb-none">
+                 <a target="_blank" href="https://drive.google.com/file/d/1MP6aKfQ8T7yG1MPefDSARaGPj3VJvSqu/view?usp=drive_link" download>Sharah Kanzul Daqaiq</a>
+              </h6>
+           </div>
+        </div>
+
+
+       
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="position-relative mb-40 text-center">
+            <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/1th--Z8hnT3Pen3xQJAB014gteEQWCfK2/view?usp=drive_link" download>
+              <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/bkjvlkc%2Cn%20j.jpg" alt="Sharah Zubdatul Itiqan" class="img-fluid mb-15 mx-auto d-block" style="height: 250px;">
+            </a>
+               
+            <h6 class="title-medium-dark size-lg mb-none">
+              <a target="_blank" href="https://drive.google.com/file/d/1th--Z8hnT3Pen3xQJAB014gteEQWCfK2/view?usp=drive_link" download>Sharah Zubdatul Itiqan</a>
+            </h6>
+          </div>
+        </div>
+       
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+           <div class="position-relative mb-40 text-center">
+              <a class="img-opacity-hover" target="_blank" href="https://drive.google.com/file/d/11hZCZHEcPiJ50Z-Lw04LVAkBQWzQmyjy/view?usp=drive_link" download>
+                  <img src="https://raw.githubusercontent.com/UBAIDRAZA1/Book/main/u%5Behklsnv.c.jpg" alt="Notes Qutbi" class="img-fluid mb-15" style="height: 250px;">
+              </a>
+              <br />
+              <h6 class="title-medium-dark size-lg mb-none">
+                 <a target="_blank" href="https://drive.google.com/file/d/11hZCZHEcPiJ50Z-Lw04LVAkBQWzQmyjy/view?usp=drive_link" download>Notes Qutbi</a>
+              </h6>
+           </div>
+        </div>
+    
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+    <!-- ------------------------------------------------Books-------------------------------------------------->
+
+
+
+
+    
+    <hr />
+    <br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+     <!-- Include Bootstrap JS -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+
+
+
+
+
+<footer>
+    <b><p>&copy; 2023 Kanzul Madaris Notes Created by UBAID RAZA</p></b>
+</footer>
+
+
+
+
+
+
+
+
+
+    <!--bootstrap se separate copy kya he-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
